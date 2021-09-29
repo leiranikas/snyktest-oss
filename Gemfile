@@ -20,7 +20,7 @@ end
 
 group :test do
   gem 'rspec'
-  gem 'capybara'
+  gem 'capybara', '>= 3.35.3'
 end
 
 group :production do
