@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.7.2'
 
 gem 'rake'
-gem 'hanami',       '~> 1.3'
+gem 'hanami', '~> 1.3', '>= 1.3.5'
 gem 'hanami-model', '~> 1.3'
 
 gem 'pg'
@@ -11,7 +11,7 @@ group :development do
   # Code reloading
   # See: https://guides.hanamirb.org/projects/code-reloading
   gem 'shotgun', platforms: :ruby
-  gem 'hanami-webconsole'
+  gem 'hanami-webconsole', '>= 2.1.0'
 end
 
 group :test, :development do
@@ -20,7 +20,7 @@ end
 
 group :test do
   gem 'rspec'
-  gem 'capybara'
+  gem 'capybara', '>= 3.36.0'
 end
 
 group :production do
